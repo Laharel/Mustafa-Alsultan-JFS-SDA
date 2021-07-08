@@ -14,6 +14,7 @@ public static void main(String[] args) {
     scan.close();
 	
 	while ((match.find()))
+	System.out.println( str.substring( match.start(), match.end() ) );
 	System.out.println( str +" : "+ match.matches());
 }
 }
