@@ -17,7 +17,7 @@ public class App {
                     System.out.println("Please Enter File/Directory Name");
                     String input = scan.nextLine();  // Read user input
                     try {
-                        File file = new File("/home/laharel/Desktop/"+input);
+                        File file = new File("/home/laharel/Desktop/"+input);//path+name
                         if (file.exists()){
                             // list of file objects
                             File[] paths = file.listFiles();
@@ -51,7 +51,7 @@ public class App {
                         System.out.println("Please Enter File Name including extention");
                         String input = scan.nextLine();  // Read user input
                         try {
-                            File myObj = new File("/home/laharel/Desktop/"+input);
+                            File myObj = new File("/home/laharel/Desktop/"+input);//path+name
                             if (myObj.createNewFile()) {
                                 System.out.println("File created: " + myObj.getName());
                                 } else {
@@ -67,7 +67,7 @@ public class App {
                             System.out.println("Please Enter Directory Name");
                             String input = scan.nextLine();  // Read user input
                             try {
-                                File myObj = new File("/home/laharel/Desktop/"+input);
+                                File myObj = new File("/home/laharel/Desktop/"+input);//path+name
                                 if (myObj.mkdir()) {
                                     System.out.println("File created: " + myObj.getName());
                                     } else {
@@ -88,7 +88,7 @@ public class App {
                 {
                     System.out.println("Please Enter File/Directory Name");
                     String input = scan.nextLine();  // Read user input
-                    File myObj = new File("/home/laharel/Desktop"+input); 
+                    File myObj = new File("/home/laharel/Desktop"+input); //path+name
                     if (myObj.exists()) { 
                         System.out.println("The file: " + myObj.getName()+" Exists");
                     } else {
@@ -99,7 +99,7 @@ public class App {
                 {
                     System.out.println("Please Enter File Name");
                     String input = scan.nextLine();  // Read user input
-                    File myObj = new File("/home/laharel/Desktop"+input); 
+                    File myObj = new File("/home/laharel/Desktop"+input);//path+name 
                     if (myObj.delete()) { 
                         System.out.println("Deleted the file: " + myObj.getName());
                     } else {
@@ -112,11 +112,11 @@ public class App {
                     System.out.println("Please Enter Current Name");
                     String inputa = scan.nextLine();  // Read user input
                     File oldName =
-                    new File("/home/laharel/Desktop"+inputa);
+                    new File("/home/laharel/Desktop"+inputa);//path+name
                     System.out.println("Please Enter New Name");
                     String inputb = scan.nextLine();  // Read user input
                     File newName = 
-                    new File("/home/laharel/Desktop"+inputb);
+                    new File("/home/laharel/Desktop"+inputb);//path+name
                     if (oldName.renameTo(newName)) 
                         System.out.println("Renamed successfully");        
                     else 
